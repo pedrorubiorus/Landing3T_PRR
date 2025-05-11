@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">Pedro Rubio Rus</a>
+        <ul class="navbar">
+            <li>
+                <a href="/html/quienSoy.html">Quien soy</a>
+            </li>
+            <li>
+                <a href="/html/cv.html">CV</a>
+            </li>
+            <li>
+                <a href="/html/proyectos.html">Proyectos</a>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+            </li>
+        </ul>
+    </header>
+    <main class="contacto-main">
+        <section class="contacto">
+          <h2>Formulario de Contacto</h2>
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Datos personales</legend>
+      
+              <label for="nombre">Nombre completo:</label>
+              <input type="text" id="nombre" name="nombre" required>
+      
+              <label for="email">Correo electrónico:</label>
+              <input type="email" id="email" name="email" required>
+      
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}">
+      
+              <label for="fecha">Fecha de contacto:</label>
+              <input type="date" id="fecha" name="fecha">
+      
+              <label for="web">Sitio web (opcional):</label>
+              <input type="url" id="web" name="web">
+            </fieldset>
+      
+            <fieldset>
+              <legend>Motivo del contacto</legend>
+      
+              <label for="servicio">Servicio requerido:</label>
+              <select id="servicio" name="servicio" required>
+                <option value="">Selecciona una opción</option>
+                <option value="marketing">Marketing Digital</option>
+                <option value="web">Diseño Web</option>
+                <option value="estrategia">Estrategia Online</option>
+              </select>
+      
+              <p>¿Desea recibir información adicional?</p>
+              <label><input type="radio" name="info" value="si"> Sí</label>
+              <label><input type="radio" name="info" value="no" checked> No</label>
+      
+              <label for="comentarios">Comentarios:</label>
+              <textarea id="comentarios" name="comentarios" rows="5"></textarea>
+      
+              <label><input type="checkbox" name="acepto" required> Acepto la política de privacidad</label>
+            </fieldset>
+      
+            <div class="botones-form">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+          </form>
+        </section>
+      </main>
+</body>
+</html>
